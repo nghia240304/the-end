@@ -1,0 +1,368 @@
+:root{
+    --border: 1px solid #dce1e4;
+    --gradient: linear-gradient(-45deg, #00bbff, #000000);
+    --box-shadow: 5px 5px 15px #c1c8d3, -5px -5px 15px #fff;
+    --primary-color: #f2726a;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+.container{
+    width: 1400px;
+    margin: auto;
+}
+
+.logo img{
+    height: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
+
+.justify-space-between{
+    justify-content: space-between;
+}
+
+.logo a{
+    text-decoration: none;
+    color: red;
+}
+
+.nav-menu li{
+    padding: 20px;
+}
+
+.nav-menu li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.change-mode{
+    border: 0;
+    background: red;
+    font-size: 25px;
+    padding: 8px 13px;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.nav-menu li:last-child{
+    padding: 0;
+}
+
+.home-txt h2{
+    font-size: 30px;
+    font-weight: 500;
+    padding: 20px 0;
+    color: rgb(21, 255, 0);
+}
+
+.home-txt span{
+    font-size: 22px;
+    text-transform: capitalize;
+    font-weight: 600;
+    color: rgb(255, 255, 0);
+}
+
+.home-txt h1{
+    font-size: 60px;
+    padding: 20px 0;
+    color: yellow;
+    position: relative;
+}
+
+.home-txt h1::after{
+    content: '';
+    width: 150px;
+    height: 4px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.home-txt{
+    width: 100%;
+    position: relative;
+    right: -50%;
+}
+
+.home-txt p{
+    font-size: 20px;
+    color: rgb(0, 255, 179);
+    line-height: 30px;
+    padding-bottom: 40px;
+}
+
+
+.home-txt h2 span{
+    padding-left: 8px;
+    border-right: 3px solid;
+    font-size: 30px;
+    font-weight: 500;
+    animation: typer .75s step-end infinite;
+}
+
+@keyframes typer{
+    from, to{
+        boder-color: transparent;
+    }
+    50%{
+        border-color: #292929;
+    }
+}
+
+.home-img{
+    width: 450px;
+    height: 450px;
+    border: 15px solid;
+    border-color: #007fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.home-img img{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+.home-img-border{
+    position: relative;
+    padding: 40px;
+    background: rgba(0, 255, 247, 0);
+    border-radius: 50% 0% 0% 50%;
+    left: -60%;
+}
+
+.home-img-border::after{
+    content: '';
+    width: 500px;
+    position: absolute;
+    border: 15px solid;
+    border-color: red;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 310px;
+}
+
+section.home{
+    overflow: hidden;
+    position: relative;
+    background-image: url(a1.jpg);
+    background-size: 100%;
+}
+
+nav{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background: rgb(0, 200, 255);
+    z-index: 1000;   /*menu coos ddinhj*/
+    box-shadow: 0 12px 15px rgba(0, 0, 0, 0.1);
+}
+
+.home-social{
+    position: relative;
+    left: 250px;
+}
+.home-social li{
+    display: inline-block;
+}
+.home-social li a i{
+    padding: 7px;
+    background: #f2f2f2;
+    color: black;
+    font-size: 17px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: 1s;
+    margin: 10px;
+}
+
+.home-social li a:hover i{
+    color: white;
+    background: orangered;
+}
+
+@keyframes quay{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.nav-menu li a:hover{
+    color: yellow;
+}
+
+/*About me*/
+
+section.about{
+    background-image: url(a2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.title{
+    text-align: center;
+    font-size: 60px;
+    font-family: sans-serif;
+    -webkit-text-stroke: 5px #ff0000;
+    letter-spacing: 20px;
+    padding-top: 60x;
+    margin-top: 10px;
+}
+.title h1{
+    padding-top: 30px;
+}
+.about-img img{
+    width: 550px;
+    margin-bottom: 50px;
+}
+
+span.content-title{
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    color: #ffb700;
+    display: flex;
+    align-items: center;
+}
+
+span.content-title::before{
+    content: '';
+    width: 3px;
+    height: 20px;
+    background: #ea4020;
+    margin-right: 15px;
+}
+
+p.bold{
+    font-weight: bold;
+    font-size: 17px;
+    color: white;
+}
+
+.content-item p {
+    padding-top: 10px;
+    line-height: 25px;
+    color: #292929;
+}
+
+.about-contents{
+    width: 600px;
+}
+
+.content-items{
+    padding-bottom: 30px;
+}
+.content-items li {
+    text-align: center;
+}
+ul.expertise li{
+    padding: 10px 15px;
+    font-weight: bold;
+    border: 1px solid;
+    border-color: rgba(41,41,41,0.1);
+    border-radius: 40px;
+    margin-left: 20px;
+    bottom: 10px;
+    color: #292929;
+    background: white;
+    font-size: 14px;
+    transition: .3s;
+}
+
+ul.expertise li:hover{
+    border-color: rgb(255, 0, 0);
+}
+
+.content-items ul{
+    flex-wrap: wrap; /*căn đều màn hình k du thừa*/
+}
+
+.expertise li{
+    margin-top: 10px;
+}
+
+ul.expertise-withhash li span{
+    background: #ea4020;
+    padding: 12px 10px;
+    border-radius: 50%;
+    color: white;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+ul.expertise-withhash li{
+    font-size: 16px;
+    color: #292929;
+    margin-right: 30px; 
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.align-flex-and{
+    align-items: flex-end;
+}
+
+
+ul.expertise-withhash li{
+    color: white;
+}
+
+section.picture{
+    background-image: url(a7.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+#toTop{
+    position: fixed;
+    bottom: 20px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border: none;
+    font-size: 30px;
+    color: black;
+    background-size: 70%;
+    background: rgb(255, 255, 250);
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+#toTop:hover{
+    background-color: #dce1e4;
+    color: orange;
+}
+#toTop:active{
+    transform: translateY(10px);
+    box-shadow: none;
+}
